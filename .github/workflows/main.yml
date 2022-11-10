@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   deploy:
-    runs-on: ubuntu-20.1
+    runs-on: ubuntu-20.04
     steps:
       - name: deploy
         uses: appleboy/ssh-actions@v0.1.2
