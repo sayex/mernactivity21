@@ -24,7 +24,8 @@ jobs:
           username: ${{secrets.USERNAME}}
           
           script: |
-            systemctl stop www
+            sudo systemctl stop www
+            sudo systemctl stop mongod
             if [ -d "/www/mernactivity21" ]; then rm -rf /www/mernactivity21; fi
             cd /www
             git clone git@github.com:sayex/mernactivity21.git
