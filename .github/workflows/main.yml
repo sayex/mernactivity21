@@ -29,6 +29,5 @@ jobs:
             cd /www
             git clone git@github.com:sayex/mernactivity21.git
             cd /www/mernactivity21
-            npm i
-            npm run build
-            systemctl start www
+            npm run install:prod
+
