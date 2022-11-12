@@ -27,7 +27,7 @@ jobs:
             systemctl stop www
             if [ -d "/www/mernactivity21" ]; then rm -rf /www/mernactivity21; fi
             cd /www
-            git clone git@github.com:The-LockBox/the-lockbox-server.git
+            git clone git@github.com:sayex/mernactivity21.git
             cd /www/mernactivity21
             npm i
             npm run build
