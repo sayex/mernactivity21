@@ -31,4 +31,7 @@ jobs:
             git clone git@github.com:sayex/mernactivity21.git
             cd /www/mernactivity21
             npm run install:prod
+            npm run build
+            sudo systemctl start mongod
+            sudo systemctl start www
 
